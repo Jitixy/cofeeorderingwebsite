@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>     
+	<meta charset="UTF-8">     
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">     
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">     
+	<title>Order Now</title>     
+	<link rel="stylesheet" href="maain.css"> 
+</head> 
+<body>     
+	<header>         
+		    
+	</header>     
+	<main>         
+		<h1>Welcome to Tim Horton's</h1>         
+		<div class="order-form">             
+			<h2>Order your coffee now!</h2> 
+			<form action="order.php" method="post">                 
+				<label for="numCoffee">Number of coffees:</label>                 
+				<input type="number" min="1" name="numCoffee" required>                 
+				<label for="Size">Size:</label>                 
+				<select name="size" id="size" required>                     
+					<option value="0.5">Small</option>                     
+					<option value="0.75">Medium</option>                     
+					<option value="0.90">Large</option>                     
+					<option value="1.00">Extra Large</option>                 
+				</select>                 
+				<label for="cream">How many creams?</label>                 
+				<input type="number" name="creams" min="0" required>                 
+				<label for="sugars">How many sugars?</label>                 
+				<input type="number" name="sugars" min="0" required>                 
+				<input type="submit" value="Order Coffee">             
+			</form>         
+		</div>     
+	</main>     
+	<footer>         
+		<p>&copy; 2023 Tim Horton's. All rights reserved.</p>     
+	</footer> 
+</body> 
+</html>
